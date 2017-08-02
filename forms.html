@@ -9,7 +9,7 @@
 			<h1>Register With Us</h1>
 		</header>
 		<main>
-			<form method="POST" action="https://requestb.in/qn2qopqn"></form>
+			<form method="POST" action="https://requestb.in/qn2qopqn">
 				<div>
 					<label for="email_address">Email Address</label>
 					<input type="text" id="email_address" name="email_address" placeholder="Enter Email Address">
@@ -21,9 +21,10 @@
 				<br>
 				<div>
 					<label for="bio">Bio</label>
-					<textarea name="bio" id="bio" cols="40" rows="10" placeholder="Please give a brief description about yourself"></textarea>
+					<textarea name="bio" id="bio" cols="40" rows="10" placeholder="Please give a brief description about yourself."></textarea>
 				</div>
 				<br>
+				<div>
 					<label>
 						How Did You Hear About Us?
 					</label>
@@ -43,7 +44,22 @@
 						<input type="checkbox" name="reference" value="Other">
 						Other
 					</label>
-
+				</div>
+				<br>
+				<div>
+					<label for="browser">What web browser are using?</label>
+					<select name="browser" id="browser">
+						<option value="google_chrome">Google Chrome</option>
+						<option value="safari">Safari</option>
+						<option value="internet_explorer">Internet Explorer</option>
+						<option value="firefox">Firefox</option>
+					</select>
+				</div>
+				<br>
+				<div>
+					<button>Submit</button>
+				</div>
+			</form>
 		</main>
 	</body>
 </html>
