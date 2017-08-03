@@ -1,13 +1,59 @@
-.fancy-header, h2 {
-    color: #607a80;
-    text-decoration: underline;
+/*.fancy-header {*/
+    /*color: purple;*/
+    /*text-decoration: underline;*/
+/*}*/
 
+h1, h2 {
+    color: #8cac8c;
+    text-decoration: underline;
 }
 
-.fancy-header {
+h1 {
+    color: #607a80;
+}
+
+header {
     text-align: center;
 }
 
 body {
-    background-color: #d4d5e3;
+    /*background-color: FFE4C4;*/
+    background-image: url("../img/confectionary.png");
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 1.5em;
+}
+
+ul li {
+    list-style: square;
+}
+
+table {
+    font-family: 'Slabo 27px', serif;
+}
+
+th, td {
+    padding: 10px
+}
+
+th {
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+a:link {
+    color: #0000FF;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #962c0b;
+}
+
+a:hover {
+    color: #98b013;
+}
+
+a:active {
+    color: #007900;
+
 }
