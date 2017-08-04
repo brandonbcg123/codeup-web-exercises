@@ -1,3 +1,7 @@
+h1 {
+    margin-bottom: 0px;
+}
+
 .box {
     border: 1px solid #000;
     width: 50px;
@@ -7,6 +11,13 @@
     margin-right: 50px;
     color: white;
     font-weight: bold;
+    float: left;
+    position: relative;
+}
+.box>img {
+    position: absolute;
+    top: -40px;
+    right: -40px;
 }
 
 #red-box {
@@ -23,6 +34,7 @@
 
 #green-box {
     background-color: #008000;
+    clear: left;
 }
 
 #blue-box {

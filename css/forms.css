@@ -1,0 +1,12 @@
+h1 {
+    color: #7479ff;
+    text-decoration: underline;
+}
+
+body {
+    background-color: beige;
+    text-align: center;
+}
+ #email_address {
+     background-color: red;
+ }
