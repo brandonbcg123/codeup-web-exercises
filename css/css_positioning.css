@@ -1,5 +1,5 @@
 h1 {
-    margin-bottom: 0px;
+    margin-bottom: 50px;
 }
 
 .box {
@@ -7,7 +7,7 @@ h1 {
     width: 50px;
     height: 50px;
     padding: 10px;
-    margin-top: 50px;
+    margin-bottom: 50px;
     margin-right: 50px;
     color: white;
     font-weight: bold;
@@ -19,10 +19,6 @@ h1 {
     position: absolute;
     top: -40px;
     right: -40px;
-}
-
-.box:nth-child(3), .box:nth-child(5) {
-    clear: left;
 }
 
 #red-box {
@@ -39,6 +35,7 @@ h1 {
 
 #green-box {
     background-color: #008000;
+    clear: left
 }
 
 #blue-box {
