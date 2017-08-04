@@ -1,3 +1,7 @@
+h1 {
+    margin 0px;
+}
+
 .box {
     border: 1px solid black;
     height: 50px;
@@ -8,3 +12,32 @@
     color: #FFF;
 }
 
+#red-box {
+    background-color: #F00;
+}
+
+#orange-box {
+    background-color: #FF5A00;
+    margin-left: 30px;
+}
+
+#yellow-box {
+    background-color: #FF0;
+    margin-left: 60px;
+}
+
+#green-box {
+    background-color: #0F0;
+    margin-left: 90px;
+}
+
+#blue-box {
+    background-color: #00F;
+    margin-left: 120px;
+}
+
+
+#violet-box {
+    background-color: #EE82EE;
+    margin-left: 150px;
+}
