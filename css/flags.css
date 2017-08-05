@@ -1,0 +1,48 @@
+header>h1 {
+    text-align: center;
+}
+
+.label {
+    font-size: 17px;
+    font-family: Helvetica Neue, Helvetica, Segoe UI, Tahoma,Arial, sans-serif;
+    text-align: center;
+    font-weight: normal;
+}
+
+.container {
+    border: 1px solid rgba(0, 0, 0, 0.38);
+    display: block;
+    height: 160px;
+    width: 257px;
+    position: relative;
+    float: left;
+    margin-left: 5%;
+}
+
+#square {
+    border-style: hidden;
+    background-color: #3C3B6E;
+    height: 87px;
+    width: 97px;
+    position: absolute;
+    top: 0;
+    left:0;
+}
+
+#square>img{
+    height: 100%;
+    width: 100%;
+}
+
+.red {
+background-color: #BB133E;
+}
+
+.white {
+    background-color: white;
+}
+
+.stripe {
+    height: 12.3px;
+    width: 100%;
+}
