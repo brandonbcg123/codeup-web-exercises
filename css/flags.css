@@ -1,5 +1,6 @@
 header>h1 {
     text-align: center;
+    font-weight: bolder;
 }
 
 body {
@@ -20,7 +21,7 @@ body {
     width: 257px;
     position: relative;
     float: left;
-    margin-left: 5%;
+    margin-left: 10%;
 }
 
 #blue-square {
@@ -54,12 +55,12 @@ background-color: #BB133E;
 #japan-background {
     height: 100%;
     width: 100%;
-    background-color: #fff;
+    background-color: #FFF;
     position: relative;
 }
 
 .japan-circle {
-    background-color: #f00;
+    background-color: #F00;
     height: 87px;
     width: 87px;
     position: absolute;
@@ -68,15 +69,13 @@ background-color: #BB133E;
     left: 80px;
 }
 
-#uk-background {
-    height: 100%;
-    width: 100%;
+#uk {
     background-color: #FFF;
     position: relative;
 }
 
 .thick {
-    background-color: #ff0000;
+    background-color: #F00;
 }
 
 #horizontal {
@@ -91,7 +90,7 @@ background-color: #BB133E;
     width: 20px;
     position: absolute;
     left: 119px;
-    bottom: 0px;
+    bottom: 0;
 }
 
 #top-left {
@@ -100,7 +99,7 @@ background-color: #BB133E;
     border-top: 47px solid blue;
     border-left: 62px solid transparent;
     position: absolute;
-    top: 0px;
+    top: 0;
     right: 145px;
 }
 
@@ -110,7 +109,7 @@ background-color: #BB133E;
     border-top: 47px solid blue;
     border-right: 62px solid transparent;
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 145px;
 }
 
@@ -120,7 +119,7 @@ background-color: #BB133E;
     border-bottom: 47px solid blue;
     border-left: 62px solid transparent;
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     right: 145px;
 }
 
@@ -130,7 +129,7 @@ background-color: #BB133E;
     border-bottom: 47px solid blue;
     border-right: 62px solid transparent;
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     left: 145px;
 }
 
@@ -141,7 +140,7 @@ background-color: #BB133E;
     border-left: 62px solid transparent;
     position: absolute;
     top: 19px;
-    left: 0px;
+    left: 0;
     transform: rotate(180deg);
 }
 
@@ -152,7 +151,7 @@ background-color: #BB133E;
     border-right: 62px solid transparent;
     position: absolute;
     top: 19px;
-    right: 0px;
+    right: 0;
     transform: rotate(180deg);
 }
 
@@ -163,7 +162,7 @@ background-color: #BB133E;
     border-left: 62px solid transparent;
     position: absolute;
     bottom: 19px;
-    left: 0px;
+    left: 0;
     transform: rotate(180deg);
 }
 
@@ -179,7 +178,194 @@ background-color: #BB133E;
 }
 
 .parallelogram {
-    width: 5px;
-    height: 5px;
-    background-color: #f00;
+    background: red;
 }
+
+#denmark {
+    margin-top: 60px;
+    background-color: #F00;
+    position: relative;
+}
+
+.denmark-lines {
+    background-color: #FFF;
+    position: absolute;
+}
+
+#denmark-horizontal {
+    width: 100%;
+    height: 12%;
+    top: 50%;
+}
+
+#denmark-vertical {
+    height: 100%;
+    width: 5%;
+    left: 25%;
+}
+
+#russia {
+    margin-top: 60px;
+    background-color: #FFF;
+    position: relative;
+}
+
+.russia-stripes {
+    position: absolute;
+}
+
+#russia-blue {
+    background-color: #0000CD;
+    width: 100%;
+    height: 33.3%;
+    top: 33.3%;
+}
+
+#russia-red {
+    background-color: #F00;
+    width: 100%;
+    height: 33.4%;
+    top: 66.4%;
+}
+
+#ireland {
+    margin-top: 60px;
+    background-color: #FFF;
+    position: relative;
+}
+
+.ireland-stripes{
+    position: absolute;
+}
+
+#ireland-green {
+    background-color: #00AE00;
+    height: 100%;
+    width: 33.4%;
+    left: 0%;
+}
+
+#ireland-orange {
+    background-color: #FFA500;
+    height: 100%;
+    width: 33.3%;
+    right: 0%;
+}
+
+#ireland {
+    margin-top: 60px;
+    background-color: #FFF;
+    position: relative;
+}
+
+.ireland-stripes{
+    position: absolute;
+}
+
+#sweden {
+    margin-top: 60px;
+    background-color: #FFF;
+    position: relative;
+}
+
+.sweden {
+    position: absolute;
+}
+
+.sweden-lines {
+    background-color: #F00;
+}
+
+#sweden-horizontal {
+    width: 100%;
+    height: 12%;
+    top: 58%;
+}
+
+#sweden-vertical {
+    height: 100%;
+    width: 5%;
+    left: 25%;
+}
+
+.rectangle {
+    background-color: #0000CD;
+}
+
+#top-large-box {
+    height: 87px;
+    width: 173px;
+    top: 0%;
+    right: 0%;
+}
+
+#bottom-large-box {
+    height: 42px;
+    width: 173px;
+    bottom: 0%;
+    right: 0%;
+}
+
+#top-small-box {
+    height: 87px;
+    width: 57px;
+    top: 0%;
+    left: 0%;
+}
+
+#bottom-small-box {
+    height: 42px;
+    width: 57px;
+    bottom: 0%;
+    left: 0%;
+}
+
+#bolivia {
+    margin-top: 60px;
+    background-color: #FF0;
+    position: relative;
+}
+
+.bolivia-stripes {
+    position: absolute;
+}
+
+#bolivia-red {
+    background-color: #F00;
+    width: 100%;
+    height: 33.3%;
+    top: 0%;
+}
+
+#bolivia-green {
+    background-color: #008000;
+    width: 100%;
+    height: 33.4%;
+    bottom: 0%;
+}
+
+#switzerland {
+    margin-top: 60px;
+    background-color: #F00;
+    position: relative;
+}
+
+.cross {
+    position: absolute;
+    background-color: #FFF;
+}
+
+#switzerland-cross-horizontal {
+    height: 100px;
+    width: 30px;
+    top: 19%;
+    left: 44%;
+}
+
+#switzerland-cross-vertical {
+    height: 30px;
+    width: 100px;
+    top: 41%;
+    left: 30%;
+}
+
