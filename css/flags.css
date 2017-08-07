@@ -2,6 +2,10 @@ header>h1 {
     text-align: center;
 }
 
+body {
+    background-color: #F2F2F2;
+}
+
 .label {
     font-size: 17px;
     font-family: Helvetica Neue, Helvetica, Segoe UI, Tahoma,Arial, sans-serif;
@@ -19,7 +23,7 @@ header>h1 {
     margin-left: 5%;
 }
 
-#square {
+#blue-square {
     border-style: hidden;
     background-color: #3C3B6E;
     height: 87px;
@@ -29,7 +33,7 @@ header>h1 {
     left:0;
 }
 
-#square>img{
+#blue-square>img{
     height: 100%;
     width: 100%;
 }
@@ -45,4 +49,137 @@ background-color: #BB133E;
 .stripe {
     height: 12.3px;
     width: 100%;
+}
+
+#japan-background {
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+}
+
+.japan-circle {
+    background-color: #f00;
+    height: 87px;
+    width: 87px;
+    position: absolute;
+    border-radius: 100%;
+    top: 37px;
+    left: 80px;
+}
+
+#uk-background {
+    height: 100%;
+    width: 100%;
+    background-color: #FFF;
+    position: relative;
+}
+
+.thick {
+    background-color: #ff0000;
+}
+
+#horizontal {
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    top: 70px;
+}
+
+#vertical {
+    height: 100%;
+    width: 20px;
+    position: absolute;
+    left: 119px;
+    bottom: 0px;
+}
+
+#top-left {
+    width: 0;
+    height: 0;
+    border-top: 47px solid blue;
+    border-left: 62px solid transparent;
+    position: absolute;
+    top: 0px;
+    right: 145px;
+}
+
+#top-right {
+    width: 0;
+    height: 0;
+    border-top: 47px solid blue;
+    border-right: 62px solid transparent;
+    position: absolute;
+    top: 0px;
+    left: 145px;
+}
+
+#bottom-left {
+    width: 0;
+    height: 0;
+    border-bottom: 47px solid blue;
+    border-left: 62px solid transparent;
+    position: absolute;
+    bottom: 0px;
+    right: 145px;
+}
+
+#bottom-right {
+    width: 0;
+    height: 0;
+    border-bottom: 47px solid blue;
+    border-right: 62px solid transparent;
+    position: absolute;
+    bottom: 0px;
+    left: 145px;
+}
+
+#top-left-side {
+    width: 0;
+    height: 0;
+    border-top: 47px solid blue;
+    border-left: 62px solid transparent;
+    position: absolute;
+    top: 19px;
+    left: 0px;
+    transform: rotate(180deg);
+}
+
+#top-right-side {
+    width: 0;
+    height: 0;
+    border-top: 47px solid blue;
+    border-right: 62px solid transparent;
+    position: absolute;
+    top: 19px;
+    right: 0px;
+    transform: rotate(180deg);
+}
+
+#bottom-left-side {
+    width: 0;
+    height: 0;
+    border-bottom: 47px solid blue;
+    border-left: 62px solid transparent;
+    position: absolute;
+    bottom: 19px;
+    left: 0px;
+    transform: rotate(180deg);
+}
+
+#bottom-right-side {
+    width: 0;
+    height: 0;
+    border-bottom: 47px solid blue;
+    border-right: 62px solid transparent;
+    position: absolute;
+    bottom: 19px;
+    right: 0px;
+    transform: rotate(180deg);
+}
+
+.parallelogram {
+    width: 5px;
+    height: 5px;
+    background-color: #f00;
 }
