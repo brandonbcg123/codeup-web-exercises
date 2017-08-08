@@ -27,21 +27,26 @@
 
 .column-one-half {
     width: 50%;
+    background-color: #E1E1E1;
 }
 .column-one-third {
     width: 33.33%;
+    background-color: #FF0;
 }
 
 .column-one-fourth {
     width: 25%;
+    background-color: #0FF;
 }
 
 .column-one-sixth {
     width: 16.6%;
+    background-color: #008000;
 }
 
 .column-one-eighth {
     width: 12.5%;
+    background-color: #2F2;
 }
 
 #mixture {
@@ -50,7 +55,6 @@
 
 @media screen and (max-width: 768px) {
     .column-one-eighth, .column-one-sixth, .column-one-fourth, .column-one-third, .column-one-half {
-        float: left;
         width: 100%;
     }
 }
