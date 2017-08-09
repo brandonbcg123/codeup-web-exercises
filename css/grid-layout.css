@@ -22,6 +22,10 @@
     margin-bottom: 10px;
 }
 
+.column-one {
+    width: 100%;
+}
+
 .column-two-third {
     width: 67%
 }
