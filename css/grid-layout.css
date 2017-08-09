@@ -7,7 +7,6 @@
 .row {
     width: 100%;
     margin-bottom: 10px;
-
 }
 
 .row:after {
@@ -20,41 +19,179 @@
     float: left;
     padding: 1px;
     box-sizing: border-box;
-    border: 1px solid #000;
     margin-bottom: 10px;
-    background-color: #E1E1E1;
+}
+
+.column-two-third {
+    width: 67%
 }
 
 .column-one-half {
     width: 50%;
-    background-color: #E1E1E1;
 }
+
+.column-three-eight {
+    width: 37.5%
+}
+
 .column-one-third {
     width: 33.33%;
-    background-color: #FF0;
 }
 
 .column-one-fourth {
     width: 25%;
-    background-color: #0FF;
 }
 
 .column-one-sixth {
     width: 16.6%;
-    background-color: #008000;
 }
 
 .column-one-eighth {
     width: 12.5%;
-    background-color: #2F2;
+}
+
+.offset-two-third {
+    width: 67%;
+    float: left;
+}
+
+.offset-one-half {
+    width: 50%;
+    float: left;
+}
+
+.offset-three-eighth {
+    width: 37.5%;
+    float: left;
+}
+
+.offset-one-third {
+    width: 33%;
+    float: left;
+}
+
+.offset-one-fourth {
+    width: 25%;
+    float: left;
+}
+
+.offset-one-sixth {
+    width: 16.6%;
+    float: left;
+}
+
+.offset-one-eighth {
+    width: 12.5%;
+    float: left;
 }
 
 #mixture {
     margin-top: 30px;
 }
+/*the #mixture id selector shown right above this comment is related to the grid-layout.html not the media-queries.html */
 
 @media screen and (max-width: 768px) {
-    .column-one-eighth, .column-one-sixth, .column-one-fourth, .column-one-third, .column-one-half {
+    .column-one-eighth, .column-one-sixth, .column-one-fourth, .column-one-third, .column-three-eight, .column-one-half, .column-two-third {
         width: 100%;
     }
 }
+
+/*@media screen and (min-width: 769px) {*/
+    /*.column-full-sm{*/
+        /*width:100%;*/
+    /*}*/
+
+    /*.column-two-third-sm {*/
+        /*width: 67%;*/
+    /*}*/
+
+    /*.column-one-half-sm {*/
+        /*width: 50%;*/
+    /*}*/
+
+    /*.column-three-eight-sm {*/
+        /*width:37.5%;*/
+    /*}*/
+
+    /*.column-one-third-sm {*/
+        /*width: 33.33%;*/
+    /*}*/
+
+    /*.column-one-fourth-sm {*/
+        /*width: 25%;*/
+    /*}*/
+
+    /*.column-one-sixth-sm {*/
+        /*width: 16.6%;*/
+    /*}*/
+
+    /*.column-one-eighth-sm {*/
+        /*width: 12.5%;*/
+    /*}*/
+/*}*/
+
+/*@media screen and (min-width: 992px) {*/
+    /*.column-full-md{*/
+        /*width:100%;*/
+    /*}*/
+
+    /*.column-two-third-md {*/
+        /*width: 67%;*/
+
+    /*.column-one-half-md {*/
+        /*width: 50%;*/
+    /*}*/
+
+    /*.column-three-eight-md {*/
+        /*width:37.5%;*/
+    /*}*/
+
+    /*.column-one-third-md {*/
+        /*width: 33.33%;*/
+    /*}*/
+
+    /*.column-one-fourth-md {*/
+        /*width: 25%;*/
+    /*}*/
+
+    /*.column-one-sixth-md {*/
+        /*width: 16.6%;*/
+    /*}*/
+
+    /*.column-one-eighth-md {*/
+        /*width: 12.5%;*/
+    /*}*/
+/*}*/
+
+/*@media screen and (min-width: 1200px) {*/
+    /*.column-full-lg{*/
+        /*width:100%;*/
+    /*}*/
+
+    /*.column-two-third-lg {*/
+        /*width: 67%;*/
+
+    /*.column-one-half-lg {*/
+        /*width: 50%;*/
+    /*}*/
+
+    /*.column-three-eight-lg {*/
+        /*width:37.5%;*/
+    /*}*/
+
+    /*.column-one-third-lg {*/
+        /*width: 33.33%;*/
+    /*}*/
+
+    /*.column-one-fourth-lg {*/
+        /*width: 25%;*/
+    /*}*/
+
+    /*.column-one-sixth-lg {*/
+        /*width: 16.6%;*/
+    /*}*/
+
+    /*.column-one-eighth-lg {*/
+        /*width: 12.5%;*/
+    /*}*/
+/*}*/
