@@ -106,8 +106,35 @@ if (flipACoin === 0) {
 }
 
 //ternary operator
-console.log("Using a ternary operator:")
+console.log("Using a ternary operator:");
 var buyOptions = (flipACoin === 0) ? console.log("Isaac needs to buy a car.") : console.log("Isaac need to buy a house.")
+
+//Promotion at Walmart problem - Problem 3
+
+var luckyNumber = Math.floor(Math.random()* 6);
+var receipt$ = 60;
+var discountOne = 0.1;
+var discountTwo = 0.25;
+var discountFour = 0.5;
+var discountFive = 1;
+
+switch (luckyNumber) {
+    case 1:
+        console.log("I have to pay: $" + receipt$ * (1 - discountOne));
+        break;
+    case 2:
+        console.log("I have to pay: $" + receipt$ * (1 - discountTwo));
+        break;
+    case 4:
+        console.log("I have to pay: $" + receipt$ * (1 - discountFour));
+        break;
+    case 5:
+        console.log("I have to pay: $" + receipt$ * (1 - discountFive));
+        break;
+    default:
+        console.log("I have to pay: $" + receipt$);
+}
+
 
 
 
