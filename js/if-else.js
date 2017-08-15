@@ -6,6 +6,7 @@
 //     another with a single random color value
 var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 var color = colors[Math.floor(Math.random()*colors.length)];
+console.log("The random color generated is: " + color);
 
 var favorite = 'green'; // TODO: change this to your favorite color from the list
 
