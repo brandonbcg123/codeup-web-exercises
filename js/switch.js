@@ -33,3 +33,76 @@ switch (color) {
     default:
         console.log("I do not know anything by this color known as " + color + ".");
 }
+
+var nameCameron = "Cameron";
+var nameRyan = "Ryan";
+var nameGeorge = "George";
+var totalMoreThan$200 = 200;
+var cameronOriginal$ = 180;
+var ryanOriginal$ = 250;
+var georgeOriginal$ = 320;
+var discount = .1;
+
+console.log(nameCameron + ":");
+console.log("The amount " + nameCameron + " owed before the discount: $" + cameronOriginal$);
+
+if (cameronOriginal$ > totalMoreThan$200) {
+    console.log("The amount " + nameCameron + " owed after the discount: $" + cameronOriginal$ * (1 - discount));
+} else {
+    console.log("The amount " + nameCameron + " owed after the discount: $" + cameronOriginal$);
+}
+
+console.log(nameRyan + ":");
+console.log("The amount " + nameRyan + " owed before the discount: $" + ryanOriginal$);
+
+if (ryanOriginal$ > totalMoreThan$200) {
+    console.log("The amount " + nameRyan + " owed after the discount: $" + ryanOriginal$ * (1 - discount));
+} else {
+    console.log("The amount " + nameryan + " owed after the discount: $" + ryanOriginal$);
+}
+
+console.log(nameGeorge + ":");
+console.log("The amount " + nameGeorge + " owed before the discount: $" + cameronOriginal$);
+
+if (georgeOriginal$ > totalMoreThan$200) {
+    console.log("The amount " + nameGeorge + " owed after the discount: $" + georgeOriginal$ * (1 - discount));
+} else {
+    console.log("The amount " + nameGeorge + " owed after the discount: $" + georgeOriginal$);
+}
+
+
+// const discountThreshold = 200;
+// const discountPercentage = 1 - discount;
+//
+// var cameronOriginalPrice = 180;
+// var georgeOriginalPrice = 300;
+//
+// var cameronFinalPrice = cameronOriginalPrice;
+// var georgeFinalPrice = georgeOriginalPrice;
+//
+//
+//
+//
+//
+// if (cameronOriginalPrice >= discountThreshold) {
+//     cameronFinalPrice = cameronOriginalPrice * discountPercentage;
+// }
+//
+//
+//
+//
+//
+// console.log('Cameron -- original: ' + cameronOriginalPrice + ' - final: ' + cameronFinalPrice)
+//
+// console.log('Cameron -- original: ' + cameronOriginalPrice + ' - final: ' + cameronFinalPrice)
+// console.log('Cameron -- original: ' + cameronOriginalPrice + ' - final: ' + cameronFinalPrice)
+
+
+
+
+
+
+
+
+
+
