@@ -109,8 +109,8 @@ if (flipACoin === 0) {
 console.log("Using a ternary operator:");
 var buyOptions = (flipACoin === 0) ? console.log("Isaac needs to buy a car.") : console.log("Isaac need to buy a house.")
 
-//Promotion at Walmart problem - Problem 3
 
+//Promotion at Walmart problem - Problem 3
 var luckyNumber = Math.floor(Math.random()* 6);
 var receipt$ = 60;
 var discountOne = 0.1;
