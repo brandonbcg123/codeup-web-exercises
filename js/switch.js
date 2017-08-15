@@ -34,6 +34,8 @@ switch (color) {
         console.log("I do not know anything by this color known as " + color + ".");
 }
 
+
+// HEB problem - Problem 1
 var nameCameron = "Cameron";
 var nameRyan = "Ryan";
 var nameGeorge = "George";
@@ -62,7 +64,7 @@ if (ryanOriginal$ > totalMoreThan$200) {
 }
 
 console.log(nameGeorge + ":");
-console.log("The amount " + nameGeorge + " owed before the discount: $" + cameronOriginal$);
+console.log("The amount " + nameGeorge + " owed before the discount: $" + georgeOriginal$);
 
 if (georgeOriginal$ > totalMoreThan$200) {
     console.log("The amount " + nameGeorge + " owed after the discount: $" + georgeOriginal$ * (1 - discount));
@@ -70,7 +72,7 @@ if (georgeOriginal$ > totalMoreThan$200) {
     console.log("The amount " + nameGeorge + " owed after the discount: $" + georgeOriginal$);
 }
 
-
+//Notes for a more efficient way
 // const discountThreshold = 200;
 // const discountPercentage = 1 - discount;
 //
@@ -80,26 +82,32 @@ if (georgeOriginal$ > totalMoreThan$200) {
 // var cameronFinalPrice = cameronOriginalPrice;
 // var georgeFinalPrice = georgeOriginalPrice;
 //
-//
-//
-//
+
 //
 // if (cameronOriginalPrice >= discountThreshold) {
 //     cameronFinalPrice = cameronOriginalPrice * discountPercentage;
 // }
 //
 //
-//
-//
-//
 // console.log('Cameron -- original: ' + cameronOriginalPrice + ' - final: ' + cameronFinalPrice)
 //
 // console.log('Cameron -- original: ' + cameronOriginalPrice + ' - final: ' + cameronFinalPrice)
 // console.log('Cameron -- original: ' + cameronOriginalPrice + ' - final: ' + cameronFinalPrice)
 
 
+//Buy a car or house problem - Problem 2
+var flipACoin = Math.floor(Math.random()* 2)
 
+console.log("Using If/Else Statements:");
+if (flipACoin === 0) {
+    console.log("Isaac needs to buy a car.")
+} else {
+    console.log("Isaac need to buy a house.")
+}
 
+//ternary operator
+console.log("Using a ternary operator:")
+var buyOptions = (flipACoin === 0) ? console.log("Isaac needs to buy a car.") : console.log("Isaac need to buy a house.")
 
 
 
