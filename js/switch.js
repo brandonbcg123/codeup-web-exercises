@@ -136,6 +136,7 @@ switch (luckyNumber) {
         break;
     default:
         console.log("I have to pay: $" + receipt$);
+        //luckyNumber 0 (case 0) and luckyNumber 3 (case 3) are defaulted because they don't have a discount
 }
 
 
