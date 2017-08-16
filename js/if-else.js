@@ -5,7 +5,7 @@
 //     one with the colors of the rainbow
 //     another with a single random color value
 var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
-var color = colors[Math.floor(Math.random()*colors.length)];
+var color = colors[Math.floor(Math.random() * colors.length)];
 console.log("The random color generated is: " + color);
 
 var favorite = 'green'; // TODO: change this to your favorite color from the list
@@ -25,11 +25,11 @@ if (color === 'red') {
 } else if (color === 'orange') {
     console.log("The color of delicious mango fruit is " + color + ".");
 } else if (color === 'yellow') {
-    console.log ("The color of the burning sun is " + color + ".");
+    console.log("The color of the burning sun is " + color + ".");
 } else if (color === 'green') {
-    console.log ("The color of the dollar bill is " + color + ".")
+    console.log("The color of the dollar bill is " + color + ".")
 } else if (color === 'blue') {
-    console.log ("The color of the sky is " + color + ".")
+    console.log("The color of the sky is " + color + ".")
 } else {
     console.log("I do not know anything by this color known as " + color + ".")
 }
