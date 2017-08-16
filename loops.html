@@ -8,5 +8,20 @@
 
 	<script src="js/while.js"></script>
 	<script src="js/for_loops.js"></script>
+	<script>
+		"use strict";
+
+        var strRepeat;
+
+        for (var i = 1; i <= 10; i++) {
+		    if (i === 10) {
+				strRepeat = (i.toString().substring(1, 2).repeat(i))
+				///could replace .substring(1, 2) with .substr(1) which will still only take the 2nd digit in 10 "The 0"
+            } else {
+                strRepeat = (i.toString().repeat(i))
+            }
+			console.log(strRepeat);
+		}
+	</script>
 </body>
 </html>
