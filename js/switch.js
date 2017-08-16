@@ -139,6 +139,7 @@ switch (luckyNumber) {
 }
 
 
+//Confirm, Prompt, ALert / User Interaction Exercise
 var numberChosen = confirm("Would you like to enter a number?");
 
 
