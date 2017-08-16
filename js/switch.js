@@ -144,7 +144,7 @@ switch (luckyNumber) {
 var numberChosen = confirm("Would you like to enter a number?");
 
 
-if (numberChosen) {
+if (numberChosen === true) {
     var enterNumber = parseInt(prompt("Please enter a number."));
 }
 
