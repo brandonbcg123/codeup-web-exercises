@@ -143,23 +143,24 @@ var numberChosen = confirm("Would you like to enter a number?");
 
 
 if (numberChosen) {
-    var enterNumber = prompt("Please enter a number.");
+    var enterNumber = parseInt(prompt("Please enter a number."));
 }
 
-if (enterNumber === NaN) {
-    alert("This is not a number!")
-}
-
-if (enterNumber % 2 === 0) {
-    alert(enterNumber + " is even.");
+if (isNaN(enterNumber)) {
+    alert("This is not a number!");
 } else {
-    alert(enterNumber + " is odd.");
-}
-var sum = enterNumber + 100;
-alert("The number " + enterNumber + " + 100 equals: " + sum);
 
-if (enterNumber > 0) {
-    alert(enterNumber + " is positive.");
-} else {
-    alert(enterNumber + " is negative.");
+    if (enterNumber % 2 === 0) {
+        alert(enterNumber + " is even.");
+    } else {
+        alert(enterNumber + " is odd.");
+    }
+    var sum = enterNumber + 100;
+    alert("The number " + enterNumber + " + 100 equals: " + sum);
+
+    if (enterNumber > 0) {
+        alert(enterNumber + " is positive.");
+    } else {
+        alert(enterNumber + " is negative.");
+    }
 }
