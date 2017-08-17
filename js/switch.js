@@ -61,7 +61,7 @@ console.log("The amount " + nameRyan + " owed before the discount: $" + ryanOrig
 if (ryanOriginal$ > totalMoreThan$200) {
     console.log("The amount " + nameRyan + " owed after the discount: $" + ryanOriginal$ * (1 - discount));
 } else {
-    console.log("The amount " + nameryan + " owed after the discount: $" + ryanOriginal$);
+    console.log("The amount " + nameRyan + " owed after the discount: $" + ryanOriginal$);
 }
 
 console.log(nameGeorge + ":");
@@ -97,7 +97,7 @@ if (georgeOriginal$ > totalMoreThan$200) {
 
 
 // //Buy a car or house problem - Problem 2
-var flipACoin = Math.floor(Math.random() * 2)
+var flipACoin = Math.floor(Math.random() * 2);
 console.log("Using If/Else Statements:");
 console.log("Coin flip generated a number of: " + flipACoin);
 if (flipACoin === 0) {
@@ -109,7 +109,8 @@ if (flipACoin === 0) {
 //ternary operator
 console.log("Using a ternary operator:");
 console.log("Coin flip generated a number of: " + flipACoin);
-var buyOptions = (flipACoin === 0) ? console.log("Isaac needs to buy a car.") : console.log("Isaac need to buy a house.")
+var buyOptions;
+buyOptions = (flipACoin === 0) ? console.log("Isaac needs to buy a car.") : console.log("Isaac need to buy a house.");
 
 
 // Promotion at Walmart problem - Problem 3

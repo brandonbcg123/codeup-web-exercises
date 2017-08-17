@@ -3,6 +3,7 @@
 //For Loop Exercises
 
 //Multiplication Table Exercise
+console.log("Multiplication Table:");
 var numberBetween1_10 = parseInt(prompt("Please enter a number between 1 and 10."));
 
 for (var a = 1; a <= 10; a++) {
@@ -16,7 +17,9 @@ for (var i = 1; i <= 10; i++) {
     console.log(numberBetween1_10 + "x" + i + "=" + total);
 }
 
+
 //Random Odd or Even 10 Number Exercise
+console.log("Random Odd or Even 10 Number Generator:");
 for (var e = 1; e <= 10; e++) {
     var randomNumber = Math.floor(Math.random() * 180) + 20;
     if (randomNumber % 2 === 0) {
@@ -24,4 +27,11 @@ for (var e = 1; e <= 10; e++) {
     } else {
         console.log(randomNumber + " is odd")
     }
+}
+
+
+//Countdown By 5 Exercise
+console.log("Countdown by 5:");
+for (var m = 100; m >= 5; m -= 5) {
+    console.log(m);
 }

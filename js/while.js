@@ -1,9 +1,10 @@
-"use strict"
+"use strict";
 
 //While Loop Exercises
 
 
 //Multiples of 2 exercise
+console.log("Multiples of 2:");
 var multiplesOf2 = 1;
 
 while (multiplesOf2 < 65536) {
@@ -14,6 +15,7 @@ while (multiplesOf2 < 65536) {
 
 //Do-While Exercise
 //Ice Cream Cone Seller Exercise
+console.log("Ice Cream Cone Seller:");
 var allCones = Math.floor(Math.random() * 50) + 50;
 
 
@@ -29,4 +31,4 @@ do {
     }
 } while (allCones > 0);
 
-console.log("Yay! I sold all the cones!")
+console.log("Yay! I sold all the cones!");
