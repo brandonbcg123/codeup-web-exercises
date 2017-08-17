@@ -20,7 +20,7 @@ var allCones = Math.floor(Math.random() * 50) + 50;
 
 
 console.log("The total amount of cones to sell is: " + allCones);
-
+//Put the Mathfloor(Math.random() * 5) + 1 inside the do-while loop
 do {
     var cones = Math.floor(Math.random() * 5) + 1;
     if (allCones >= cones) {
