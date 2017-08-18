@@ -11,6 +11,9 @@
 
     // TODO: Create log statements that will print each of the names array elements individually.
 
-
+    console.log("The first name in the array is: " + names[0]);
+    console.log("The second name in the array is: " + names[1]);
+    console.log("The third name in the array: " + names[2]);
+    console.log("The fourth name in the array: " + names[3]);
 
 })();
