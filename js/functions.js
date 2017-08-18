@@ -50,7 +50,11 @@
      * console.log *outside of the function* to check your work
      */
 
-
+    function isOdd(number){
+        var numberInside = (number % 2 !== 0) ? number + " is an odd number." : number + " is an even number.";
+        return numberInside;
+    }
+    console.log(isOdd(random));
     /**
      * TODO: Create a function named 'calculateTip' to calculate a tip on a bill at a
      * restaurant
