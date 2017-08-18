@@ -9,11 +9,10 @@
 
     console.log("There are " + names.length + " names in the array.");
 
-    // TODO: Create log statements that will print each of the names array elements individually.
+    // TODO: Create log statements that will print each of the names array elements individually. (now using a for loop)
 
-    console.log("The first name in the array is: " + names[0]);
-    console.log("The second name in the array is: " + names[1]);
-    console.log("The third name in the array: " + names[2]);
-    console.log("The fourth name in the array: " + names[3]);
+   for (var i = 0; i < names.length; i++) {
+       console.log("The name at index " + i + " is: " + names[i]);
+   }
 
 })();
