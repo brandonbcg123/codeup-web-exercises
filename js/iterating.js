@@ -13,12 +13,12 @@
 
    //For Loop
     for (var i = 0; i < names.length; i++) {
-       console.log("The name at index " + i + " is: " + names[i]);
+       console.log(names[i]);
    }
 
    //For-Each Loop
    // Can take out array in the function parameter as it is not needed in this case
-    names.forEach(function (element, index) {
-        console.log("The name at index " + index + " is: " + element);
+    names.forEach(function (element) {
+        console.log(element);
     });
 })();
