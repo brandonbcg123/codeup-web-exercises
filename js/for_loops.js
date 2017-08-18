@@ -36,16 +36,23 @@ for (var m = 100; m >= 5; m -= 5) {
     console.log(m);
 }
 
+
 // var userInput = prompt("How many lines of stars do you want?");
 // var star = "";
 //
-// for (var i = 1; i <= userInput; i++); {
-//     for (var e = 0; e < i; e++) {
-//         star = star + " * ";
-//         console.log(star);
-//     }
+// (function () {
+//     console.log("We are starting here!!!!!!!!!!!!!!");
+//     var userInput = prompt("How many lines of stars do you want?");
+//     var star = "";
 //
-// }
-
-
-
+//     for (var i = 1; i <= userInput; i++) {
+//
+//         for (var e = 0; e < i; e++) {
+// //console.log(e);
+//             star = star + " * ";
+//         }
+//         console.log(star);
+//         star = "";
+//     }
+//     console.log("We are ending here!!!!!!!!!!!!!!");
+// })();
