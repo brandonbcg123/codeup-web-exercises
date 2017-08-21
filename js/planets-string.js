@@ -12,8 +12,10 @@
     var planetsBreak = planetsArray.join("<br>");
     console.log(planetsBreak);
     //       Why might this be useful?
+    //Answer: It helps distinguish each planet with its own line and having html tags inside a JS string allows us to dynamically change the content of a webpage.
 
     // Bonus: Create a second string that would display your planets in an undordered list.
+
     //        You will need an opening AND closing <ul> tags around the entire string, and <li> tags around each planet.
     //        console.log() your results.
 
