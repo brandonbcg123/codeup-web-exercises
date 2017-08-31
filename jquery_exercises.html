@@ -16,9 +16,9 @@
 		<p class="codeup" id="jQueryAwesome">JQuery is awesome because it's a library for Javascript making it easier to locate items and call them without having to create the elements and selectors separately.</p>
 		<br>
 		<h1 id="loremHeader">This Next Line might not make since</h1>
-		<p id="randomLorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aut blanditiis culpa
+		<div id="randomLorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aut blanditiis culpa
 			delectus deserunt dolores doloribus earum expedita iusto minus molestiae necessitatibus officia officiis
-			quia reiciendis rerum sed sequi, voluptatibus.</p>
+			quia reiciendis rerum sed sequi, voluptatibus.</div>
 		<div id="lists">
 			<ul class="jQueryList">
 				<li id="jQuery">JQuery Rocks</li>
@@ -45,8 +45,12 @@
 //    });
 //    var content = $('#jQuery').html();
 //    alert(content);
-$('.codeup').css('border', '1px solid red');
-
+//$('.codeup').css('border', '1px solid red');
+$('li').css('font-size', '20px');
+$('h1').css('background-color', 'highlight');
+$('p').css('background-color', 'highlight');
+$('li').css('background-color', 'highlight');
+alert($('h1').html())
 </script>
 
 </body>
