@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Konami Code</title>
+</head>
+<body>
+<h1>Konami Code</h1>
+
+<script
+		src="http://code.jquery.com/jquery-3.2.1.min.js"
+		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+		crossorigin="anonymous">
+</script>
+<script>
+    "use strict";
+
+    $(document).keyup(function (key) {
+        //
+//        console.log(konami[i]);
+        console.log(key.keyCode);
+        if (key.keyCode === konami[i]) {
+            i++;
+            if (i === konami.length);
+		    alert("You have added 30 lives!")
+        } else {
+            alert("incorrect code");
+            i = 0
+		}
+
+    });
+    var i = 0;
+    var konami = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65, 13];
+
+
+</script>
+
+</body>
+</html>
