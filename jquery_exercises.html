@@ -5,20 +5,22 @@
 	<title>JQuery Selectors</title>
 </head>
 <body>
-	<header>
+<header>
 	<h1 id="head" class="codeup">JQuery Selectors Are Awesome</h1>
-	</header>
+</header>
 <main>
 	<div id="jQueryHead">
 		<h1 class="codeup" id="jQueryHeader">Why is JQuery so cool</h1>
 	</div>
 	<div class="paragraphs lists">
-		<p class="codeup" id="jQueryAwesome">JQuery is awesome because it's a library for Javascript making it easier to locate items and call them without having to create the elements and selectors separately.</p>
+		<p class="codeup" id="jQueryAwesome">JQuery is awesome because it's a library for Javascript making it easier to
+			locate items and call them without having to create the elements and selectors separately.</p>
 		<br>
 		<h1 id="loremHeader">This Next Line might not make since</h1>
 		<div id="randomLorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aut blanditiis culpa
 			delectus deserunt dolores doloribus earum expedita iusto minus molestiae necessitatibus officia officiis
-			quia reiciendis rerum sed sequi, voluptatibus.</div>
+			quia reiciendis rerum sed sequi, voluptatibus.
+		</div>
 		<div id="lists">
 			<ul class="jQueryList">
 				<li id="jQuery">JQuery Rocks</li>
@@ -39,18 +41,21 @@
 <script src="js/jquery-2.2.4.min.js"></script>
 
 <script>
-    "use strict";
+    (function () {
+        "use strict";
 //    $(document).ready(function () {
 //        alert("The DOM has finished loading")
 //    });
 //    var content = $('#jQuery').html();
 //    alert(content);
 //$('.codeup').css('border', '1px solid red');
-$('li').css('font-size', '20px');
-$('h1').css('background-color', 'highlight');
-$('p').css('background-color', 'highlight');
-$('li').css('background-color', 'highlight');
-alert($('h1').html())
+        $('li').css('font-size', '20px');
+//        $('h1').css('background-color', 'highlight');
+//        $('p').css('background-color', 'highlight');
+//        $('li').css('background-color', 'highlight');
+        alert($('h1').html());
+		$('h1, li, p').css('background-color', 'highlight');
+    })();
 </script>
 
 </body>
