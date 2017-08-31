@@ -6,7 +6,7 @@
 </head>
 <body>
 <header>
-	<h1 id="head" class="codeup">JQuery Selectors Are Awesome</h1>
+	<h1 id="mainHead" class="codeup">JQuery Selectors Are Awesome</h1>
 </header>
 <main>
 	<div id="jQueryHead">
@@ -17,10 +17,10 @@
 			locate items and call them without having to create the elements and selectors separately.</p>
 		<br>
 		<h1 id="loremHeader">This Next Line might not make since</h1>
-		<div id="randomLorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aut blanditiis culpa
+		<p id="randomLorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aut blanditiis culpa
 			delectus deserunt dolores doloribus earum expedita iusto minus molestiae necessitatibus officia officiis
 			quia reiciendis rerum sed sequi, voluptatibus.
-		</div>
+		</p>
 		<div id="lists">
 			<ul class="jQueryList">
 				<li id="jQuery">JQuery Rocks</li>
@@ -49,12 +49,33 @@
 //    var content = $('#jQuery').html();
 //    alert(content);
 //$('.codeup').css('border', '1px solid red');
-        $('li').css('font-size', '20px');
+//        $('li').css('font-size', '20px');
 //        $('h1').css('background-color', 'highlight');
 //        $('p').css('background-color', 'highlight');
 //        $('li').css('background-color', 'highlight');
-        alert($('h1').html());
-		$('h1, li, p').css('background-color', 'highlight');
+//        alert($('h1').html());
+//		$('h1, li, p').css('background-color', 'highlight');
+
+		var clickHeader = $("#mainHead");
+
+		$(clickHeader).click(function(){
+		    $(this).css("background-color", "#DCEDFF");
+        });
+
+		var dblClickParagraphs = $("p");
+
+		$(dblClickParagraphs).dblclick(function() {
+            $(this).css('font-size', '18px');
+        });
+
+        var hoverLists = $("li");
+        $(hoverLists).hover(
+            function() {
+            $(this).css("color", "red");
+        }, function() {
+                $(this).css("color", "#000")
+			});
+
     })();
 </script>
 
