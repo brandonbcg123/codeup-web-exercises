@@ -42,39 +42,27 @@
 
 <script>
     (function () {
-        "use strict";
-//    $(document).ready(function () {
-//        alert("The DOM has finished loading")
-//    });
-//    var content = $('#jQuery').html();
-//    alert(content);
-//$('.codeup').css('border', '1px solid red');
-//        $('li').css('font-size', '20px');
-//        $('h1').css('background-color', 'highlight');
-//        $('p').css('background-color', 'highlight');
-//        $('li').css('background-color', 'highlight');
-//        alert($('h1').html());
-//		$('h1, li, p').css('background-color', 'highlight');
 
-		var clickHeader = $("#mainHead");
+        var clickHeader = $("#mainHead");
 
-		$(clickHeader).click(function(){
-		    $(this).css("background-color", "#DCEDFF");
+        $(clickHeader).click(function () {
+            $(this).css("background-color", "#DCEDFF");
         });
 
-		var dblClickParagraphs = $("p");
+        var dblClickParagraphs = $("p");
 
-		$(dblClickParagraphs).dblclick(function() {
+        $(dblClickParagraphs).dblclick(function () {
             $(this).css('font-size', '18px');
         });
 
         var hoverLists = $("li");
+
         $(hoverLists).hover(
-            function() {
-            $(this).css("color", "red");
-        }, function() {
+            function () {
+                $(this).css("color", "red");
+            }, function () {
                 $(this).css("color", "#000")
-			});
+            });
 
     })();
 </script>
