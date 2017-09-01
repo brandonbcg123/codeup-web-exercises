@@ -47,6 +47,7 @@
 				<dd class="invisible">Ther are 58 national parks.</dd>
 
 		</dl>
+		<a href="#" id="highlight">Toogle On and Off</a>
 	</main>
 
 	<script
@@ -58,7 +59,12 @@
 	<script>
 		(function () {
 			"use strict";
-
+			$(document).ready(function() {
+                $("#highlight").click(function (event) {
+                    event.preventDefault();
+                    $("dd").toggleClass("invisible");
+                });
+            });
 
 		})();
 </script>
