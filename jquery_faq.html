@@ -63,6 +63,7 @@
                 $("#highlight").click(function (event) {
                     event.preventDefault();
                     $("dd").toggleClass("invisible");
+                    //have to put "dd" to select and unselect because the invisible class would disappear from the dd element after clicking the anchor, but the element would not disappear.
                 });
             });
 
