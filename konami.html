@@ -21,13 +21,14 @@
         console.log(key.keyCode);
         if (key.keyCode === konami[i]) {
             i++;
-            if (i === konami.length);
-		    alert("You have added 30 lives!")
+            if (i === konami.length) {
+                alert("You have added 30 lives!");
+            }
         } else {
             alert("incorrect code");
+            console.log(i);
             i = 0
-		}
-
+        }
     });
     var i = 0;
     var konami = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65, 13];
