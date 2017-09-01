@@ -18,34 +18,34 @@
 		<dl>
 			<dt>What is a national park?</dt>
 				<dd class="invisible">A scenic or historically large area of public land set aside for native plants, animals and the places in which they live.</dd>
-
+			<br>
 			<dt>Can I visit a national park alone on my own?</dt>
 				<dd class="invisible">That depends on the park, some parks require a local forest guide.</dd>
-
+			<br>
 			<dt>How do I obtain a park entrance pass?</dt>
 				<dd class="invisible">You can obtain park entrance passes by visiting a park site that charges an entrance fee.</dd>
-
+			<br>
 			<dt>How do I reserve a tour in a park?</dt>
 				<dd class="invisible">You can book some park tours through Recreation.gov </dd>
-
+			<br>
 			<dt>What was the first national park in America?</dt>
 				<dd class="invisible">YellowStone National Park</dd>
-
+			<br>
 			<dt>What is the largest national park in the United States?</dt>
 				<dd class="invisible">The Wrangell-St. ELias National Park.</dd>
-
+			<br>
 			<dt>How close can I get to wild animals in National Parks?</dt>
 				<dd class="invisible">Stay at least 25 yards away from animals that mean no harm, but stay at least 100 yards away from animals with a dangerous intent.</dd>
-
+			<br>
 			<dt>Why do people go to national parks?</dt>
 				<dd class="invisible">Most of the time its because people enjoy a national park's scenery and landscape</dd>
-
+			<br>
 			<dt>What are geysers?</dt>
 				<dd class="invisible">A hot spring in which water intermittently boils, sending a tall column of water and steam into the air.</dd>
-
+			<br>
 			<dt>How many national parks are in the United States?</dt>
 				<dd class="invisible">Ther are 58 national parks.</dd>
-
+			<br>
 		</dl>
 		<a href="#" id="highlight">Toogle On and Off</a>
 	</main>
@@ -64,6 +64,11 @@
                     event.preventDefault();
                     $("dd").toggleClass("invisible");
                 });
+            });
+
+			$("dt").click(function(){
+//			    $("dt").css("background-color", "#FFF");
+			    $(this).css("background-color", "#7CB342");
             });
 		})();
 </script>
