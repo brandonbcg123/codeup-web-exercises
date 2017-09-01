@@ -22,7 +22,10 @@
         if (key.keyCode === konami[i]) {
             i++;
             if (i === konami.length) {
-                alert("You have added 30 lives!");
+                var h1 = $("h1");
+                h1.html("You have added 6 lives!");
+                h1.css("color", "red").css("font-size", "80px").css("text-align", "center");
+                $("body").css("background-image", "url('img/giphy.gif')");
             }
         } else {
             alert("incorrect code");
