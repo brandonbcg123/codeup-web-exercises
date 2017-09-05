@@ -11,6 +11,7 @@
 </head>
 <body>
 	<header>
+		<button id="yellow-bkgr" href="">Highlight Last Fact</button>
 		<h1>National Parks</h1>
 	</header>
 	<main>
@@ -47,7 +48,30 @@
 				<dd class="invisible">Ther are 58 national parks.</dd>
 			<br>
 		</dl>
-		<a href="#" id="highlight">Toogle On and Off</a>
+		<a href="#" id="highlight">Toggle On and Off</a>
+
+		<h1>Parks List</h1>
+		<h3>Yellowstone National Park</h3>
+		<ul class="four-facts-about-the-park" id="yellowstone">
+			<li>Yellowstone is the world's first national park.</li>
+			<li>The park sits on top of an active volcano.</li>
+			<li>The park has more than 500 active geysers.</li>
+			<li>The park has 67 species of mammals.</li>
+		</ul>
+		<h3>Grand Canyon National Park</h3>
+		<ul class="four-facts-about-the-park" id="grand-canyon">
+			<li>The Grand Canyon is located in Arizona.</li>
+			<li>The park is around 6000 feet deep.</li>
+			<li>The Colorado River runs through this park</li>
+			<li>This park creates its own weather.</li>
+		</ul>
+		<h3>Glacier National Park</h3>
+		<ul class="four-facts-about-the-park" id="glacier">
+			<li>Glacier National Park was established on May 11, 1910.</li>
+			<li>The park has a total of 762 lakes. </li>
+			<li>The park has 175 mountains.</li>
+			<li>The park has 26 glaciers.</li>
+		</ul>
 	</main>
 
 	<script
@@ -71,6 +95,20 @@
 //			    $("dt").css("background-color", "#FFF");
 			    $(this).css("background-color", "#7CB342");
             });
+
+            $("#yellow-bkgr").click(function(event){
+                $(".four-facts-about-the-park").children().next().next().next().css("background-color", "yellow");
+            });
+
+//            var list = $("h3").next().children();
+//			console.log(list);
+            $("h3").click(function(event){
+                $(this).next().children().css("font-weight", "bold");
+			});
+
+            $("li").click(function(event){
+				$(this).parent().children().first().css("color", "blue");
+			})
 		})();
 </script>
 </body>
