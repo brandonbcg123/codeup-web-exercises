@@ -7,47 +7,63 @@
 		.invisible {
 			display: none;
 		}
-		/*.pictureFrame {*/
-			/*float: left;*/
-			/*margin-left: 20px;*/
-		/*}*/
-		/*.pictureFrame img {*/
-			/*height: 100px;*/
-			/*width: 80px;*/
-		/*}*/
-		/*#button-container  {*/
-			/*clear: both;*/
-			/*margin-left: 30px;*/
-		/*}*/
-		/*h2 {*/
-			/*clear: both;*/
-		/*}*/
-		/*button {*/
-			/*display: block;*/
-			/*margin: 10px 20px;*/
-		/*}*/
+		.pictureFrame {
+			float: left;
+			margin-left: 20px;
+		}
+		.pictureFrame img {
+			height: 100px;
+			width: 80px;
+		}
+		.four-facts-about-the-park {
+			display: none
+		}
+		#button-container  {
+			clear: both;
+			margin-left: 30px;
+		}
+		#questions {
+			clear: left;
+		}
+		#register {
+			display: none
+		}
+		button {
+			display: block;
+			margin: 10px 20px;
+		}
+		span {
+			color: red;
+		}
+		main {
+			clear: both;
+		}
 	</style>
 
 </head>
 <body>
 	<header>
+		<div id="newsletter">
+			<h1>Would you like to sign up for our newsletter? <span>x</span></h1>
+		</div>
+		<h2 id="register">Would you like to register for the site?</h2>
 		<h1>National Parks</h1>
+
+			<div class="pictureFrame" id="picOne">
+				<img src="img/pencil.jpg" alt="pencil">
+				<button class="swap" href="">Swap</button>
+			</div>
+			<div class="pictureFrame" id="picTwo">
+				<img src="img/labtop.jpg" alt="labtop">
+				<button class="swap" href="">Swap</button>
+			</div>
+			<div class="pictureFrame" id="picThree">
+				<img src="img/mountainview.jpg" alt="mountainview">
+				<button class="swap" href="">Swap</button>
+			</div>
 	</header>
 	<main>
-		<!--<div class="pictureFrame" id="picOne">-->
-			<!--<img src="img/pencil.jpg" alt="pencil">-->
-			<!--<button class="swap" href="">Swap</button>-->
-		<!--</div>-->
-		<!--<div class="pictureFrame" id="picTwo">-->
-			<!--<img src="img/labtop.jpg" alt="labtop">-->
-			<!--<button class="swap" href="">Swap</button>-->
-		<!--</div>-->
-		<!--<div class="pictureFrame" id="picThree">-->
-			<!--<img src="img/mountainview.jpg" alt="mountainview">-->
-			<!--<button class="swap" href="">Swap</button>-->
-		<!--</div>-->
-
-		<h2>Frequently Asked Questions ABout National Parks</h2>
+		<h2 id="Questions">Frequently Asked Questions About National Parks</h2>
 		<a href="#" id="highlight">Toggle On and Off</a>
 		<dl>
 			<dt>What is a national park?</dt>
@@ -152,7 +168,33 @@
 
             $("li").click(function(event){
 				$(this).parent().children().first().css("color", "blue");
-			})
+			});
+
+			$(".swap").click(function(event){
+			    var imgOne = $(this).prev();
+			    var imgTwo = $(this).parent().next().children().first();
+                var imgTwoSrc = imgTwo.attr("src");
+			    imgTwo.attr("src", imgOne.attr("src"));
+				imgOne.attr("src", imgTwoSrc);
+            }); //(image)
+
+
+//			JQuery Effects Exercise
+			$("span").click(function() {
+			    $(this).parent().hide();
+			});
+
+			$("h3").click(function() {
+				$(this).next().slideToggle();
+			});
+
+
+			function fadeRegister() {
+                console.log("it runs");
+				$("#register").fadeIn();
+            }
+            setTimeout(fadeRegister, 8000);
+
 		})();
 </script>
 </body>
