@@ -131,16 +131,16 @@
 
             //Transversing Section
 
-			$("#yellow-bkgr").click(function(event){
-                $(".four-facts-about-the-park").children().next().next().next().css("background-color", "yellow");
-            });
-
-
-//            $("#yellow-bkgr").click(function (event) {
-//                $("ul").each(function (index) {
-//                    $(this).children().last().css("background-color", "yellow");
-//                });
+//			$("#yellow-bkgr").click(function(event){
+//                $(".four-facts-about-the-park").children().next().next().next().css("background-color", "yellow");
 //            });
+
+
+            $("#yellow-bkgr").click(function (event) {
+                $("ul").each(function (index) {
+                    $(this).children().last().css("background-color", "yellow");
+                });
+            });
 //			The commented out version is the better way than the .next().next.next() version
 
 
