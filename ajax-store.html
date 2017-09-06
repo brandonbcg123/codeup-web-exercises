@@ -1,74 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Online Store</title>
+	<title>Online Store</title>
+	<link rel="stylesheet"
+		  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+		  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+		  crossorigin="anonymous"
+	>
 </head>
 <body>
+<div class="container">
+	<h1>My Tool Store</h1>
+	<table id="products" class="table table-hover">
+		<thead>
+		<tr>
+			<th>Title</th>
+			<th>Quantity</th>
+			<th>Price</th>
+			<th>Categories</th>
+		</tr>
+		</thead>
+		<tbody id="insertProducts"></tbody>
+	</table>
+	<br>
+	<button type="button" class="btn btn-primary" id="refreshButton" href="">Update / Refresh</button>
+</div>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+		integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+		crossorigin="anonymous">
 
-<h1>My Tool Store</h1>
-
-<table id="products">
-    <thead>
-        <tr>
-            <th>Title</th>
-            <th>Quantity</th>
-            <th>Price</th>z
-            <th>Categories</th>
-        </tr>
-    </thead>
-    <tbody id="insertProducts"></tbody>
-</table>
-<br>
-<button id="refreshButton" href="">Update / Refresh</button>
-
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 <script>
-(function() {
-    "use strict";
-    // TODO: Create an ajax GET request for /data/inventory.json
-    var request = $.ajax("data/inventory.json");
-            //could have "typed": "GET", but its defaulted tothis anyways
+    (function () {
+        "use strict";
+        // TODO: Create an ajax GET request for /data/inventory.json
+        var request = $.ajax("data/inventory.json");
+        //could have "typed": "GET", but its defaulted tothis anyways
 //        type: "GET"
 
-    request.done(buildTable);
-    // make an ajax request
-    // use the data in buildTable
+        request.done(buildTable);
+        // make an ajax request
+        // use the data in buildTable
 
-    $("#refreshButton").click(function (event) {
-        $("#insertProducts").empty();
-        buildTable();
-    });
+        $("#refreshButton").click(function (event) {
+            $.ajax("data/inventory.json").done(buildTable);
+        });
 //
-// $.ajax("data/inventory.json").done(buildTable);
-//        Could have used this with an empty string $("#insertProducts").html(""); in the buildTable function as well
+//        $("#insertProducts").empty();
+//        buildTable();
+//        Could have used the items commented out above to replace the $.ajax("data/inventory.json").done(buildTable) above; and remove the empty string $("#insertProducts").html(""); in the buildTable function.
 
-    // TODO: Take the data from inventory.json and append it to the products table
-    //       HINT: Your data should come back as a JSON object; use console.log() to inspect
-    //             its contents and fields
-    //       HINT: You will want to target #insertProducts for your new HTML elements
+        // TODO: Take the data from inventory.json and append it to the products table
+        //       HINT: Your data should come back as a JSON object; use console.log() to inspect
+        //             its contents and fields
+        //       HINT: You will want to target #insertProducts for your new HTML elements
 
-    function appendTable(tableRows) {
-        $("#insertProducts").append(tableRows);
-    }
-    function buildTable(tools) {
-//        $("#insertProducts").html("");
-        tools.forEach(function (tool) {
-            var toolRows = "<tr>" +
-                "<td>" + tool.title + "</td>" +
-                "<td>" + tool.quantity + "</td>" +
-                "<td>" + tool.price + "</td>" +
-                "<td>" + tool.categories + "</td>" +
-                "</tr>";
-            appendTable(toolRows);
+        function appendTable(tableRows) {
+            $("#insertProducts").append(tableRows);
+        }
+
+        function buildTable(tools) {
+            $("#insertProducts").html("");
+            tools.forEach(function (tool) {
+                var toolRows = "<tr>" +
+                    "<td>" + tool.title + "</td>" +
+                    "<td>" + tool.quantity + "</td>" +
+                    "<td>" + tool.price + "</td>" +
+                    "<td>" + tool.categories + "</td>" +
+                    "</tr>";
+                appendTable(toolRows);
 //
 //            console.log(toolRows);
 //            console.log(buildTable);
 //            console.log(appendTable);
-        }); console.log("buildTable was called");
-    }
+            });
+            console.log("buildTable was called");
+        }
 
-})();
+    })();
 </script>
 
 </body>
