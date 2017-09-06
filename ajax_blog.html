@@ -11,8 +11,13 @@
 	>
 </head>
 <body>
-<div id="posts">
-
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12">
+			<div id="posts" class="text-center">
+			</div>
+		</div>
+	</div>
 </div>
 <script
 		src="http://code.jquery.com/jquery-3.2.1.min.js"
@@ -30,18 +35,12 @@
     (function () {
         "use strict";
         var request = $.ajax("data/blog.json");
-		request.done(function(data){
-		    console.log(data);
-		    data.forEach(function(blogPosts) {
-		        $("#posts").append("<div><h1>" + blogPosts.title + " </h1><p> " + blogPosts.content + "</p><p><strong>" + blogPosts.categories + "</strong></p><p><em> " + blogPosts.date + "</em></p></div>");
+        request.done(function (data) {
+            console.log(data);
+            data.forEach(function (blogPosts) {
+                $("#posts").append("<div><h1>" + blogPosts.title + "</h1><p>" + blogPosts.content + "</p><p><strong>" + blogPosts.categories + "</strong></p><p><em> " + blogPosts.date + "</em></p></div>");
             });
-		});
-
-
-
-
-
-
+        });
     })();
 </script>
 
