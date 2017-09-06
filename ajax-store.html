@@ -47,10 +47,6 @@
         $("#refreshButton").click(function (event) {
             $.ajax("data/inventory.json").done(buildTable);
         });
-//
-//        $("#insertProducts").empty();
-//        buildTable();
-//        Could have used the items commented out above to replace the $.ajax("data/inventory.json").done(buildTable) above; and remove the empty string $("#insertProducts").html(""); in the buildTable function.
 
         // TODO: Take the data from inventory.json and append it to the products table
         //       HINT: Your data should come back as a JSON object; use console.log() to inspect
