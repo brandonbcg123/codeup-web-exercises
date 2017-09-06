@@ -30,5 +30,32 @@
             "tool"
         ],
         "price": 10
-    }
+    }, {
+        "title": "Shovel",
+        "quantity": 30,
+        "categories": [
+          "tool",
+          "outdoor"
+        ],
+        "price": 15
+    }, {
+        "title": "Utility Knife",
+        "quantity": 150,
+        "categories": [
+          "tool",
+          "utility"
+
+       ],
+        "price": 20
+    },
+  {
+    "title": "Tape Measure",
+    "quantity": 200,
+    "categories": [
+      "tool",
+      "utility",
+      "measurement"
+    ],
+    "price": 5
+  }
 ]
