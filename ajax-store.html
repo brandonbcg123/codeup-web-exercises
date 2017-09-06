@@ -12,12 +12,14 @@
         <tr>
             <th>Title</th>
             <th>Quantity</th>
-            <th>Price</th>
+            <th>Price</th>z
             <th>Categories</th>
         </tr>
     </thead>
     <tbody id="insertProducts"></tbody>
 </table>
+<br>
+<button id="refreshButton" href="">Update / Refresh</button>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
@@ -25,19 +27,32 @@
 (function() {
     "use strict";
     // TODO: Create an ajax GET request for /data/inventory.json
-    var request = $.ajax("data/inventory.json", {
-            "type": "GET"
-        });
+    var request = $.ajax("data/inventory.json");
+            //could have "typed": "GET", but its defaulted tothis anyways
+//        type: "GET"
 
+    request.done(buildTable);
+    // make an ajax request
+    // use the data in buildTable
+
+    $("#refreshButton").click(function (event) {
+        $("#insertProducts").empty();
+        buildTable();
+    });
+//
+// $.ajax("data/inventory.json").done(buildTable);
+//        Could have used this with an empty string $("#insertProducts").html(""); in the buildTable function as well
 
     // TODO: Take the data from inventory.json and append it to the products table
     //       HINT: Your data should come back as a JSON object; use console.log() to inspect
     //             its contents and fields
     //       HINT: You will want to target #insertProducts for your new HTML elements
+
     function appendTable(tableRows) {
         $("#insertProducts").append(tableRows);
     }
     function buildTable(tools) {
+//        $("#insertProducts").html("");
         tools.forEach(function (tool) {
             var toolRows = "<tr>" +
                 "<td>" + tool.title + "</td>" +
@@ -46,14 +61,13 @@
                 "<td>" + tool.categories + "</td>" +
                 "</tr>";
             appendTable(toolRows);
+//
 //            console.log(toolRows);
 //            console.log(buildTable);
 //            console.log(appendTable);
-        });
+        }); console.log("buildTable was called");
     }
-    request.done(buildTable);
-    // make an ajax request
-    // use the data in buildTable
+
 })();
 </script>
 
