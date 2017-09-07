@@ -223,17 +223,25 @@
         $(".swap").click(function (event) {
 
 
-            var imgOne = $(this).prev();
-            var imgTwo = $(this).parent().next().children().first();
-            var imgTwoSrc = imgTwo.attr("src");
-            imgTwo.attr("src", imgOne.attr("src"));
-            imgOne.attr("src", imgTwoSrc);
+            if ($(this).is(".swap:last")) {
+                var imgThree = $(this).prev(); // third image
+                var imgOneFirst = $(this).parent().prev().prev().children().first(); // first image
+				var imgOneSrc = imgOneFirst.attr("src");
 
-            if ($(this).is(":last")) {
-                $(this).parent().first();
-                $(this).attr("src", imgOne.attr("src"));
+                imgOneFirst.attr("src", imgThree.attr("src"));
+				imgThree.attr("src", imgOneSrc);
                 // put the image on this div in the first div
                 // put the image in the first div here
+            } else {
+                var imgOne = $(this).prev(); // current image
+                var imgTwo = $(this).parent().next().children().first();  //image at the right
+
+
+				var imgTwoSrc = imgTwo.attr("src"); // the src/url of the image at the right
+
+                imgTwo.attr("src", imgOne.attr("src"));
+                imgOne.attr("src", imgTwoSrc);
+
             }
 
         }); //(image)
