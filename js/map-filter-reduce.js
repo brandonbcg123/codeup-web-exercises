@@ -1,4 +1,4 @@
-(function () {
+// (function () {
 
     const users = [
         {
@@ -35,12 +35,28 @@
 
     console.log(users);
 
-    // Look below: users.filter ios accessing the whole array of object and (user.languages.length >= 3) is making sure that only the users who know three or more languages are stored in the new array.
+    // Look below: users.filter is accessing the whole array of object and (user.languages.length >= 3) is making sure that only the users who know three or more languages are stored in the new array...filter will return the whole array of object
 
     let userLanguages = users.filter(user => user.languages.length >= 3);
     console.log(userLanguages);
 
+
+    //map will return an array of what we ask for
     let userEmails = users.map(user => user.email);
     console.log(userEmails);
 
-}());
+//     Use .reduce to transform the array into an object where the object's keys are ids and the values are objects that represent each user
+// user is each item in the array - in this case each object in the original array
+    // let objectConversion = users.reduce((obj, user) => {
+    //     obj[user.id] = user;
+    //     return obj;
+    // },{});
+    // console.log(objectConversion);
+
+    let objectConversion = {};
+    users.reduce((obj, user) => {
+        obj[user.id] = user;
+        return obj;
+    }, objectConversion);
+    console.log(objectConversion);
+// }());
