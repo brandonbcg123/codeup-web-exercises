@@ -35,10 +35,12 @@
 
     console.log(users);
 
+    // Look below: users.filter ios accessing the whole array of object and (user.languages.length >= 3) is making sure that only the users who know three or more languages are stored in the new array.
+
     let userLanguages = users.filter(user => user.languages.length >= 3);
-    //users.filter ios accessing the whole array of object and (user.languages.length >= 3) is making sure that only the users who know three or more languages are stored in the new array.
     console.log(userLanguages);
 
-
+    let userEmails = users.map(user => user.email);
+    console.log(userEmails);
 
 }());
