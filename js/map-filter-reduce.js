@@ -1,4 +1,4 @@
-// (function () {
+(function () {
 
     const users = [
         {
@@ -46,6 +46,7 @@
     console.log(userEmails);
 
 //     Use .reduce to transform the array into an object where the object's keys are ids and the values are objects that represent each user
+//object is used as an initial value, but it doesn't have any value yet, so obj[user.id] = user will get the obj and property of the id of each object of the original array.
 // user is each item in the array - in this case each object in the original array
     // let objectConversion = users.reduce((obj, user) => {
     //     obj[user.id] = user;
