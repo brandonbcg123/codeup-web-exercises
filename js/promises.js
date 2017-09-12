@@ -19,7 +19,7 @@
 
 
     function lastCommit(user) {
-        return fetch(`https://api.github.com/users/${user}/events`, {headers: {"Authorization": "token 245052d97e34051ce5063e35f70517c9cfe1d207"}})
+        return fetch(`https://api.github.com/users/${user}/events`, {headers: {"Authorization": "Key_token"}})
             .then((response) => response.json())
             .then((events) => console.log(events[0].created_at));
     }
