@@ -21,10 +21,12 @@
     function lastCommit(user) {
         return fetch(`https://api.github.com/users/${user}/events`, {headers: {"Authorization": "token 245052d97e34051ce5063e35f70517c9cfe1d207"}})
             .then((response) => response.json())
-            .then((events) => events.map((event) => event.created_at));
+            .then((events) => console.log(events[0].created_at));
     }
-    lastCommit("brandonbcg123").then((events) => console.log(events.sort().reverse()[0]));
+    lastCommit("brandonbcg123");
 
 })();
-
-// Create a function that accepts a github username, and returns a promise that resolves with the date of the last commit that user made. Reference the github api documentation to achieve this.
+        // .then((response) => response.json())
+        //  .then((events) => events.map((event) => event.created_at));
+        // }
+        // lastCommit("brandonbcg123").then((events) => console.log(events.sort().reverse()[0]));
