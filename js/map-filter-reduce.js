@@ -60,4 +60,4 @@
         return obj;
     }, objectConversion);
     console.log(objectConversion);
-// }());
+})();
